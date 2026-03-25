@@ -318,3 +318,47 @@ section {
 .super-radius {
     border-radius: 60px;
 }
+
+.purple {
+    color: #7b0c7d;
+}
+
+.bg1 {
+    background-color: #1c77c3;
+}
+
+.bg2 {
+    background-color: #39a9db;
+}
+
+.bg3 {
+    background-color: #40bcd8;
+}
+
+.bg4 {
+    background-color: #f39237;
+}
+
+.bg5 {
+    background-color: #d63230;
+}
+
+
+
+.btn-custom {
+  background-color: #f39237; /* Tu Azul Primario */
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Hace que el cambio no sea brusco */
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-custom:hover {
+  background-color: #d63230; /* Tu Celeste Claro */
+  color: #FFFFFF;
+}

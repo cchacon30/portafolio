@@ -1,8 +1,8 @@
-/* --- CONFIGURACIÓN BASE (Lección 3 y 6) --- */
+/* --- CONFIGURACIÓN BASE --- */
 :root {
-    /* Definimos Tokens de Color para facilitar cambios (Lección 2) */
+    /* Definimos Tokens de Color para facilitar cambios */
     --color-primario: #007bff; /* Azul profesional */
-    --color-oscuro: #1a1a1a;   /* "Casi negro" para reducir fatiga visual (Lección 4) */
+    --color-oscuro: #1a1a1a;   /* "Casi negro" para reducir fatiga visual */
     --color-texto: #333333;
     --color-fondo-suave: #f8f9fa;
     --font-principal: 'Open Sans', sans-serif;
@@ -12,26 +12,32 @@
 body {
     font-family: var(--font-principal);
     color: var(--color-texto);
-    line-height: 1.6; /* Interlineado óptimo (Lección 3) */
+    line-height: 1.6; /* Interlineado óptimo */
     background-color: #ffffff;
 }
 
-/* --- TIPOGRAFÍA (Lección 3) --- */
+/* --- TIPOGRAFÍAS--- */
+
+
 h1, h2, h3, h4, h5, h6, .navbar-brand {
-    font-family: var(--font-titulos);
+    font-family: Montserrat !important;
     font-weight: 700;
-    color: var(--color-oscuro);
-    letter-spacing: -0.5px; /* Ajuste de tracking para títulos (Lección 3) */
 }
+
+p {
+    font-family: Inter !important;
+}
+
+
 
 /* --- CLASES DE UTILIDAD SOLICITADAS --- */
 .custom-rounded {
-    border-radius: 15px !important; /* Bordes suavizados para estética moderna */
+    border-radius: 15px !important;
 }
 
-/* --- COMPONENTES PERSONALIZADOS (Lección 6) --- */
+/* --- COMPONENTES PERSONALIZADOS  --- */
 
-/* Header con efecto Sticky (Lección 7) */
+/* Header con efecto Sticky  */
 .header-sticky {
     position: sticky;
     top: 0;
@@ -40,13 +46,13 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     backdrop-filter: blur(5px); /* Efecto moderno de desenfoque */
 }
 
-/* Hero Section con mejor Contraste (Lección 2) */
+/* Hero Section con mejor Contraste */
 .hero-section {
     padding: 60px 0;
     background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
 }
 
-/* Cards de Proyectos: Principio de Región Común (Lección 1) */
+/* Cards de Proyectos: Principio de Región Común */
 .card {
     transition: transform 0.3s ease, shadow 0.3s ease;
     border: none;
@@ -67,7 +73,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
 }
 
-/* Botones: Usabilidad Táctil (Lección 7) */
+/* Botones: Usabilidad Táctil  */
 .btn {
     border-radius: 8px;
     padding: 12px 24px;
@@ -86,7 +92,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     background-color: #0056b3;
 }
 
-/* --- RESPONSIVIDAD (Lección 7) --- */
+/* --- RESPONSIVIDAD --- */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem; /* Ajuste de tamaño para móviles */
@@ -116,7 +122,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     transition: transform 0.6s ease;
 }
 
-/* Capa oscura (Overlay) para legibilidad (Lección 2 y 8) */
+/* Capa oscura (Overlay) para legibilidad */
 .card-overlay {
     position: absolute;
     top: 0;
@@ -131,7 +137,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     transition: background 0.3s ease;
 }
 
-/* Efectos al pasar el mouse (Lección 4) */
+/* Efectos al pasar el mouse */
 .portfolio-card:hover img {
     transform: scale(1.1); /* Zoom suave */
 }
@@ -140,7 +146,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     background: rgba(0, 0, 0, 0.7); /* Se oscurece un poco más al hacer hover */
 }
 
-/* Textos calados en blanco (Lección 3) */
+/* Textos calados en blanco */
 .portfolio-card h5 {
     color: #ffffff !important;
     font-family: 'Montserrat', sans-serif;
@@ -154,7 +160,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     margin-bottom: 20px;
 }
 
-/* Botón Outline Blanco (Lección 4) */
+/* Botón Outline Blanco */
 .btn-outline-white {
     color: #ffffff;
     border: 2px solid #ffffff;
@@ -169,7 +175,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 
 
-/* --- ANIMACIÓN DE ENTRADA (Lección 4 y 6) --- */
+/* --- ANIMACIÓN DE ENTRADA  */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -198,7 +204,7 @@ section {
 
 
 
-/* --- SECCIÓN HABILIDADES DISRUPTIVAS --- */
+/* --- SECCIÓN HABILIDADES  --- */
 
 .skills-container {
     perspective: 1000px; /* Crea un entorno 3D para las tarjetas */
@@ -263,7 +269,7 @@ section {
 }
 
 
-/* --- ESTILOS DEL VISOR DE PROYECTOS (Lección 6 y 7) --- */
+/* --- ESTILOS DEL VISOR DE PROYECTOS --- */
 
 /* Forzamos que la imagen use su ancho natural pero respete el contenedor */
 #modalImage {
@@ -284,7 +290,7 @@ section {
     border-radius: 10px;
 }
 
-/* Animación de apertura suave (Lección 4) */
+/* Animación de apertura suave */
 .modal.fade .modal-dialog {
     transform: scale(0.9);
     transition: transform 0.3s ease-out;
@@ -296,20 +302,20 @@ section {
 
 
 .bg-custom-hero {
-    /* Ruta relativa a tu imagen (Lección 6) */
+    /* Ruta relativa a tu imagen */
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/tu-imagen.jpg');
     
-    /* Configuración para que la imagen cubra todo el div (Lección 6) */
+    /* Configuración para que la imagen cubra todo el div */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     
-    /* Altura del contenedor (Lección 6) */
+    /* Altura del contenedor */
     min-height: 500px;
     width: 100%;
 }
 
-/* Sombra opcional para resaltar el texto (Lección 3) */
+/* Sombra opcional para resaltar el texto */
 .shadow-text {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
@@ -318,6 +324,7 @@ section {
 .super-radius {
     border-radius: 60px;
 }
+
 
 .purple {
     color: #7b0c7d;
@@ -362,3 +369,6 @@ section {
   background-color: #d63230; /* Tu Celeste Claro */
   color: #FFFFFF;
 }
+
+
+
